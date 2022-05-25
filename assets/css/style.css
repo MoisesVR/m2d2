@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+        'header header'
+        'abar main'
+        'footer footer';
+    grid-template-columns: 15% auto;
+    height: 100vh;
+}
+
+.header{
+    grid-area: header;
+    background-color: blue;
+}
+
+.abar{
+    grid-area: abar;
+    background-color: gray;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-left: 10%;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.main{
+    grid-area: main;
+    background-color:darkgray;
+    gap: 10px;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bg{
+    background-size: cover;
+    height: 500px;
+}
+
+.card1{
+    display: flex;
+    background-image: url(https://fraguru.com/mdimg/perfume/375x500.1198.jpg);
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+}
+
+.card2{
+    display: flex;
+    background-image: url(https://fraguru.com/mdimg/perfume/375x500.1198.jpg);
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+}
+
+.card3{
+    display: flex;
+    background-image: url(https://fraguru.com/mdimg/perfume/375x500.1198.jpg);
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+}
+
+.card4{
+    display: flex;
+    background-image: url(https://fraguru.com/mdimg/perfume/375x500.1198.jpg);
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: dimgrey;
+}
