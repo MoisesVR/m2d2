@@ -16,6 +16,7 @@
 .header{
     grid-area: header;
     background-color: blue;
+    text-align: center;
 }
 
 .abar{
@@ -85,4 +86,5 @@
 .footer{
     grid-area: footer;
     background-color: dimgrey;
+    text-align: center;
 }
