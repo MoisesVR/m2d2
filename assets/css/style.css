@@ -1,90 +1,86 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.grid-container{
+.grid-container {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         'header header'
         'abar main'
         'footer footer';
     grid-template-columns: 15% auto;
-    height: 100vh;
+    grid-template-rows: 6% auto 6%;
 }
 
-.header{
+.header {
     grid-area: header;
-    background-color: blue;
+    background-color: #1F51AD;
     text-align: center;
+    padding-top: 10px;
+    color: white;
 }
 
-.abar{
+.abar {
     grid-area: abar;
-    background-color: gray;
+    background-color: #D7D7D7;
 }
 
-.menu{
+.menu {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    margin-left: 10%;
+    margin-top: 20px;
+    margin-left: 30px;
 }
 
-.menu a{
+.menu a {
     text-decoration: none;
 }
 
-.main{
+.main {
     grid-area: main;
-    background-color:darkgray;
-    gap: 10px;
+    background-color: #D7D7D7;
 }
 
-.productos{
+.productos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.bg{
-    background-size: cover;
-    height: 500px;
-}
-
-.card1{
+.card {
     display: flex;
-    background-image: url(https://fraguru.com/mdimg/perfume/375x500.1198.jpg);
-    align-items: flex-end;
-    justify-content: center;
-    color: white;
+    flex-direction: column;
+    width: 300px;
+    height: 450px;  
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
-.card2{
-    display: flex;
-    background-image: url(https://fraguru.com/mdimg/perfume/375x500.1198.jpg);
-    align-items: flex-end;
-    justify-content: center;
-    color: white;
+.card img{
+    width: 300px;
+    height: 350px;
 }
 
-.card3{
-    display: flex;
-    background-image: url(https://fraguru.com/mdimg/perfume/375x500.1198.jpg);
-    align-items: flex-end;
-    justify-content: center;
-    color: white;
-}
-
-.card4{
-    display: flex;
-    background-image: url(https://fraguru.com/mdimg/perfume/375x500.1198.jpg);
-    align-items: flex-end;
-    justify-content: center;
-    color: white;
-}
-
-.footer{
-    grid-area: footer;
-    background-color: dimgrey;
+.body-card {
+    padding: 2px 16px;
     text-align: center;
+    background-color: white;
+}
+
+.footer-card {
+    background-color: #1F51AD;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #1F51AD;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
 }
